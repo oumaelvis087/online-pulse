@@ -20,7 +20,8 @@ OnlinePulse is a web services company dedicated to helping businesses and indivi
 
 ## License
 
-This project is licensed under the MIT License.
+> [!IMPORTANT]
+> This project is licensed under the MIT License.
 
 ## Contact
 
