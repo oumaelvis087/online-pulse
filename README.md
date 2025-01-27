@@ -4,11 +4,11 @@ OnlinePulse is a web services company dedicated to helping businesses and indivi
 
 ## Features
 
-### Web Development: Custom websites tailored to business needs.
+1. Web Development: Custom websites tailored to business needs.
 
-### Creative Solutions: Engaging and innovative designs.
+2. Creative Solutions: Engaging and innovative designs.
 
-### Customer-Centric Approach: Prioritizing client vision to deliver exceptional results.
+3. Customer-Centric Approach: Prioritizing client vision to deliver exceptional results.
 
 ## Technologies Used
 
