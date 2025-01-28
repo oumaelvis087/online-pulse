@@ -1,0 +1,45 @@
+/* Service Details Specific Styles */
+.service-content {
+    display: none;
+}
+
+.service-content.active {
+    display: block;
+}
+
+.services-list a {
+    display: block;
+    padding: 10px 15px;
+    color: #333;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.services-list a:hover,
+.services-list a.active {
+    background-color: #f8f9fa;
+    color: #0ea2bd;
+}
+
+.services-list a i {
+    margin-right: 10px;
+}
+
+.service-box {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.services-img {
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .service-box {
+        margin-bottom: 20px;
+    }
+}

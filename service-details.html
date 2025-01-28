@@ -26,14 +26,7 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: iLanding
-  * Template URL: https://bootstrapmade.com/ilanding-bootstrap-landing-page-template/
-  * Updated: Nov 12 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <link href="assets/css/service-details.css" rel="stylesheet">
 </head>
 
 <body class="service-details-page">
@@ -49,11 +42,11 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#features">Features</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#features">Features</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="index.html#pricing">Pricing</a></li>
           <li class="dropdown"><a href="#"><span>Resources</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="#">Case Studies</a></li>
@@ -108,11 +101,11 @@
             <div class="service-box">
               <h4>Services List</h4>
               <div class="services-list">
-                <a href="#" class="active"><i class="bi bi-arrow-right-circle"></i><span>Web Development</span></a>
-                <a href="#"><i class="bi bi-arrow-right-circle"></i><span>UI/UX Design</span></a>
-                <a href="#"><i class="bi bi-arrow-right-circle"></i><span>E-commerce Solutions</span></a>
-                <a href="#"><i class="bi bi-arrow-right-circle"></i><span>Digital Strategy</span></a>
-                <a href="#"><i class="bi bi-arrow-right-circle"></i><span>Website Maintenance</span></a>
+                <a href="#web-development" class="active" onclick="showService('web-development')"><i class="bi bi-arrow-right-circle"></i><span>Web Development</span></a>
+                <a href="#ui-ux-design" onclick="showService('ui-ux-design')"><i class="bi bi-arrow-right-circle"></i><span>UI/UX Design</span></a>
+                <a href="#ecommerce" onclick="showService('ecommerce')"><i class="bi bi-arrow-right-circle"></i><span>E-commerce Solutions</span></a>
+                <a href="#digital-strategy" onclick="showService('digital-strategy')"><i class="bi bi-arrow-right-circle"></i><span>Digital Strategy</span></a>
+                <a href="#maintenance" onclick="showService('maintenance')"><i class="bi bi-arrow-right-circle"></i><span>Website Maintenance</span></a>
               </div>
             </div><!-- End Services List -->
 
@@ -134,15 +127,19 @@
           </div>
 
           <div class="col-lg-8 ps-lg-5" data-aos="fade-up" data-aos-delay="200">
-            <img src="assets/img/services.jpg" alt="Professional Web Development Services" class="img-fluid services-img">
-            <h3>Professional Web Development Services Tailored to Your Business Needs</h3>
+            <!-- Web Development -->
+            <div id="web-development" class="service-content active">
+              <img src="assets/img/services-web-dev.jpg" alt="Professional Web Development Services" class="img-fluid services-img">
+            <h3>Professional Web Development Services</h3>
             <p>
-              At OnlinePulse, we deliver cutting-edge web development solutions that help businesses thrive in the digital world. Our team of experienced developers creates custom websites and web applications that combine beautiful design with powerful functionality.
+              At OnlinePulse, we deliver cutting-edge web development solutions that help businesses establish a strong online presence. Our expert team combines technical expertise with creative innovation to build websites that drive results.
             </p>
             <ul>
-              <li><i class="bi bi-check-circle"></i> <span>Custom website development using modern frameworks and technologies</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Custom website development using modern frameworks (React, Angular, Vue.js)</span></li>
               <li><i class="bi bi-check-circle"></i> <span>Responsive design ensuring optimal performance across all devices</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>E-commerce solutions with secure payment integration</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Progressive Web Applications (PWA) development</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Full-stack development with secure backend integration</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Performance optimization and speed enhancement</span></li>
             </ul>
             <p>
               Our development process focuses on creating scalable, maintainable, and secure web solutions. We employ best practices in coding standards, version control, and testing to ensure your website performs optimally and remains future-proof.
@@ -150,6 +147,83 @@
             <p>
               We specialize in developing both frontend and backend solutions, utilizing technologies such as React, Angular, Vue.js for dynamic user interfaces, and Node.js, Python, or PHP for robust server-side applications. Our expertise extends to database design, API integration, and implementing advanced features like real-time updates and progressive web applications (PWAs).
             </p>
+          </div>
+
+            <!-- UI/UX Design -->
+            <div id="ui-ux-design" class="service-content">
+              <img src="assets/img/services-uiux.jpg" alt="UI/UX Design Services" class="img-fluid services-img">
+              <h3>UI/UX Design Services</h3>
+              <p>
+                Create exceptional user experiences with our comprehensive UI/UX design services. We focus on understanding your users' needs and crafting interfaces that are both beautiful and functional.
+              </p>
+              <ul>
+                <li><i class="bi bi-check-circle"></i> <span>User research and persona development</span></li>
+                <li><i class="bi bi-check-circle"></i> <span>Wireframing and prototyping</span></li>
+                <li><i class="bi bi-check-circle"></i> <span>Interactive design and animations</span></li>
+                <li><i class="bi bi-check-circle"></i> <span>User testing and feedback implementation</span></li>
+                <li><i class="bi bi-check-circle"></i> <span>Design system creation</span></li>
+              </ul>
+              <p>
+                Our design approach combines aesthetics with functionality, ensuring that every element serves a purpose while maintaining visual appeal and brand consistency.
+              </p>
+            </div>
+
+            <!-- E-commerce Solutions -->
+            <div id="ecommerce" class="service-content">
+              <img src="assets/img/services-ecommerce.jpg" alt="E-commerce Solutions" class="img-fluid services-img">
+              <h3>E-commerce Solutions</h3>
+              <p>
+                Transform your business with our comprehensive e-commerce solutions. We build robust online stores that drive sales and provide seamless shopping experiences.
+              </p>
+              <ul>
+                <li><i class="bi bi-check-circle"></i> <span>Custom e-commerce website development</span></li>
+                <li><i class="bi bi-check-circle"></i> <span>Secure payment gateway integration</span></li>
+                <li><i class="bi bi-check-circle"></i> <span>Inventory management systems</span></li>
+                <li><i class="bi bi-check-circle"></i> <span>Mobile commerce optimization</span></li>
+                <li><i class="bi bi-check-circle"></i> <span>Analytics and reporting tools</span></li>
+              </ul>
+              <p>
+                We specialize in creating scalable e-commerce platforms that offer secure transactions, efficient inventory management, and exceptional user experiences.
+              </p>
+            </div>
+
+            <!-- Digital Strategy -->
+            <div id="digital-strategy" class="service-content">
+              <img src="assets/img/services-strategy.jpg" alt="Digital Strategy Services" class="img-fluid services-img">
+              <h3>Digital Strategy Services</h3>
+              <p>
+                Develop a winning digital presence with our strategic consulting services. We help businesses navigate the digital landscape and achieve their online objectives.
+              </p>
+              <ul>
+                <li><i class="bi bi-check-circle"></i> <span>Digital transformation consulting</span></li>
+                <li><i class="bi bi-check-circle"></i> <span>Market research and competitor analysis</span></li>
+                <li><i class="bi bi-check-circle"></i> <span>SEO and content strategy</span></li>
+                <li><i class="bi bi-check-circle"></i> <span>Social media strategy</span></li>
+                <li><i class="bi bi-check-circle"></i> <span>Performance monitoring and optimization</span></li>
+              </ul>
+              <p>
+                Our strategic approach helps businesses identify opportunities, overcome challenges, and achieve sustainable growth in the digital space.
+              </p>
+            </div>
+
+            <!-- Website Maintenance -->
+            <div id="maintenance" class="service-content">
+              <img src="assets/img/services-maintenance.jpg" alt="Website Maintenance Services" class="img-fluid services-img">
+              <h3>Website Maintenance Services</h3>
+              <p>
+                Keep your website running smoothly with our comprehensive maintenance services. We provide regular updates, security monitoring, and performance optimization.
+              </p>
+              <ul>
+                <li><i class="bi bi-check-circle"></i> <span>Regular security updates and monitoring</span></li>
+                <li><i class="bi bi-check-circle"></i> <span>Content updates and management</span></li>
+                <li><i class="bi bi-check-circle"></i> <span>Performance optimization</span></li>
+                <li><i class="bi bi-check-circle"></i> <span>Backup and recovery services</span></li>
+                <li><i class="bi bi-check-circle"></i> <span>24/7 technical support</span></li>
+              </ul>
+              <p>
+                Our maintenance services ensure your website remains secure, up-to-date, and performs optimally at all times.
+              </p>
+            </div>
           </div>
 
         </div>
@@ -255,6 +329,7 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/service-details.js"></script>
 
 </body>
 
