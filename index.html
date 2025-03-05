@@ -26,6 +26,8 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/pricing-additional.css" rel="stylesheet">
+  <link href="assets/css/performance.css" rel="stylesheet">
 
   <!-- Meta tags for SEO -->
   <meta charset="UTF-8">
@@ -58,24 +60,30 @@
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0" title="OnlinePulse Home">
+        <img src="assets/img/logo.png" alt="OnlinePulse Logo" class="logo-img">
         <h1 class="sitename">OnlinePulse</h1>
       </a>
 
-      <nav id="navmenu" class="navmenu">
+      <nav id="navmenu" class="navmenu" aria-label="Main navigation">
         <ul>
-          <li><a href="#hero" class="active">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#features">Features</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#pricing">Pricing</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#hero" class="active" title="Home Section">Home</a></li>
+          <li><a href="#about" title="About Section">About</a></li>
+          <li><a href="#features" title="Features Section">Features</a></li>
+          <li><a href="#services" title="Services Section">Services</a></li>
+          <li><a href="#pricing" title="Pricing Section">Pricing</a></li>
+          <li><a href="#contact" title="Contact Section">Contact</a></li>
         </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list" aria-label="Toggle navigation menu"></i>
       </nav>
-      <a class="btn-getstarted" href="index.html#about">Get Started</a>
+      <a class="btn-getstarted" href="index.html#about" title="Learn more about our services">Get Started</a>
+
+      <!-- Breadcrumbs -->
+      <nav aria-label="breadcrumb" class="breadcrumb-nav">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item active" aria-current="page">Home</li>
+        </ol>
+      </nav>
 
     </div>
   </header>
@@ -113,15 +121,16 @@
 
           <div class="col-lg-6">
             <div class="hero-image" data-aos="zoom-out" data-aos-delay="300">
-              <img src="assets/img/illustration-1.webp" alt="Hero Image" class="img-fluid" draggable="false">
+              <img src="assets/img/illustration-1.webp" alt="Hero Image" class="img-fluid" draggable="false" loading="lazy">
+              <div class="loading-indicator" aria-label="Loading content"><div class="spinner"></div></div>
 
               <div class="customers-badge">
                 <div class="customer-avatars">
-                  <img src="assets/img/avatar-1.webp" alt="Customer 1" class="avatar" draggable="false">
-                  <img src="assets/img/avatar-2.webp" alt="Customer 2" class="avatar" draggable="false">
-                  <img src="assets/img/avatar-3.webp" alt="Customer 3" class="avatar" draggable="false">
-                  <img src="assets/img/avatar-4.webp" alt="Customer 4" class="avatar" draggable="false">
-                  <img src="assets/img/avatar-5.webp" alt="Customer 5" class="avatar" draggable="false">
+                  <img src="assets/img/avatar-1.webp" alt="Customer 1" class="avatar" draggable="false" loading="lazy">
+                  <img src="assets/img/avatar-2.webp" alt="Customer 2" class="avatar" draggable="false" loading="lazy">
+                  <img src="assets/img/avatar-3.webp" alt="Customer 3" class="avatar" draggable="false" loading="lazy">
+                  <img src="assets/img/avatar-4.webp" alt="Customer 4" class="avatar" draggable="false" loading="lazy">
+                  <img src="assets/img/avatar-5.webp" alt="Customer 5" class="avatar" draggable="false" loading="lazy">
                   <span class="avatar more">12+</span>
                 </div>
                 <p class="mb-0 mt-2">12,000+ satisfied clients trust OnlinePulse for their digital success</p>
@@ -754,7 +763,7 @@
               <div>
                 <h3>Web Development</h3>
                 <p>Custom web development solutions tailored to your business needs, built with cutting-edge technologies and best practices.</p>
-                <a href="service-details.html" class="read-more">Read More <i class="bi bi-arrow-right"></i></a>
+                <a href="service-details.html#web-development" class="read-more">Read More <i class="bi bi-arrow-right"></i></a>
               </div>
             </div>
           </div>
@@ -767,7 +776,7 @@
               <div>
                 <h3>Web Design</h3>
                 <p>Creative and responsive designs that enhance user experience and reflect your brand's unique identity.</p>
-                <a href="service-details.html" class="read-more">Read More <i class="bi bi-arrow-right"></i></a>
+                <a href="service-details.html#ui-ux-design" class="read-more">Read More <i class="bi bi-arrow-right"></i></a>
               </div>
             </div>
           </div>
@@ -780,7 +789,7 @@
               <div>
                 <h3>Digital Strategy</h3>
                 <p>Comprehensive digital strategies to improve your online visibility and drive meaningful engagement with your audience.</p>
-                <a href="service-details.html" class="read-more">Read More <i class="bi bi-arrow-right"></i></a>
+                <a href="service-details.html#digital-strategy" class="read-more">Read More <i class="bi bi-arrow-right"></i></a>
               </div>
             </div>
           </div>
@@ -793,7 +802,7 @@
               <div>
                 <h3>Website Maintenance</h3>
                 <p>Reliable maintenance and support services to keep your website secure, up-to-date, and performing optimally.</p>
-                <a href="service-details.html" class="read-more">Read More <i class="bi bi-arrow-right"></i></a>
+                <a href="service-details.html#maintenance" class="read-more">Read More <i class="bi bi-arrow-right"></i></a>
               </div>
             </div>
           </div>
@@ -820,19 +829,27 @@
           <!-- Basic Plan -->
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
             <div class="pricing-card">
-              <h3>Basic Plan</h3>
+              <h3>Basic Website</h3>
               <div class="price">
-                <span class="currency">$</span>
-                <span class="amount">499</span>
-                <span class="period">/ month</span>
+                <span class="currency">Ksh</span>
+                <span class="amount">10,000</span>
+                <span class="period">- 30,000</span>
               </div>
-              <p class="description">Perfect for small businesses and individuals starting their digital journey.</p>
+              <p class="description">Perfect for personal blogs, startups, small businesses, and portfolio sites.</p>
 
               <h4>Features Included:</h4>
               <ul class="features-list">
                 <li>
                   <i class="bi bi-check-circle-fill"></i>
-                  <span>5-Page Responsive Website</span>
+                  <span>3-5 Pages (Home, About, Services, Contact)</span>
+                </li>
+                <li>
+                  <i class="bi bi-check-circle-fill"></i>
+                  <span>Basic Design with Template</span>
+                </li>
+                <li>
+                  <i class="bi bi-check-circle-fill"></i>
+                  <span>Mobile-friendly Design</span>
                 </li>
                 <li>
                   <i class="bi bi-check-circle-fill"></i>
@@ -840,7 +857,7 @@
                 </li>
                 <li>
                   <i class="bi bi-check-circle-fill"></i>
-                  <span>Monthly Maintenance</span>
+                  <span>Free Domain & Hosting (1st Year)</span>
                 </li>
               </ul>
 
@@ -855,31 +872,35 @@
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
             <div class="pricing-card popular">
               <div class="popular-badge">Most Popular</div>
-              <h3>Standard Plan</h3>
+              <h3>Business Website</h3>
               <div class="price">
-                <span class="currency">$</span>
-                <span class="amount">999</span>
-                <span class="period">/ month</span>
+                <span class="currency">Ksh</span>
+                <span class="amount">30,000</span>
+                <span class="period">- 100,000</span>
               </div>
-              <p class="description">Comprehensive solution for growing businesses seeking professional web presence.</p>
+              <p class="description">Ideal for law firms, consultants, restaurants, service providers, and corporate businesses.</p>
 
-              <h4>Featured Included:</h4>
+              <h4>Features Included:</h4>
               <ul class="features-list">
                 <li>
                   <i class="bi bi-check-circle-fill"></i>
-                  <span>Advanced SEO and Analytics</span>
+                  <span>Custom UI/UX Design</span>
                 </li>
                 <li>
                   <i class="bi bi-check-circle-fill"></i>
-                  <span>Advanced Analytics Dashboard</span>
+                  <span>5-15 Pages with Blog</span>
                 </li>
                 <li>
                   <i class="bi bi-check-circle-fill"></i>
-                  <span>Custom API Integrations</span>
+                  <span>SEO Optimization</span>
                 </li>
                 <li>
                   <i class="bi bi-check-circle-fill"></i>
-                  <span>10-Page Custom Website</span>
+                  <span>Contact Forms & Live Chat</span>
+                </li>
+                <li>
+                  <i class="bi bi-check-circle-fill"></i>
+                  <span>Free Domain & Hosting (1st Year)</span>
                 </li>
               </ul>
 
@@ -893,35 +914,35 @@
           <!-- Premium Plan -->
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
             <div class="pricing-card">
-              <h3>Premium Plan</h3>
+              <h3>E-Commerce Website</h3>
               <div class="price">
-                <span class="currency">$</span>
-                <span class="amount">1999</span>
-                <span class="period">/ month</span>
+                <span class="currency">Ksh</span>
+                <span class="amount">80,000</span>
+                <span class="period">- 250,000+</span>
               </div>
-              <p class="description">Enterprise-grade digital transformation package for maximum impact.</p>
+              <p class="description">Perfect for fashion stores, electronics, food delivery, and online retail businesses.</p>
 
-              <h4>Featured Included:</h4>
+              <h4>Features Included:</h4>
               <ul class="features-list">
                 <li>
                   <i class="bi bi-check-circle-fill"></i>
-                  Temporibus autem quibusdam
+                  <span>Product Catalog with Categories</span>
                 </li>
                 <li>
                   <i class="bi bi-check-circle-fill"></i>
-                  <span>E-commerce Integration</span>
+                  <span>M-Pesa & Card Payments</span>
                 </li>
                 <li>
                   <i class="bi bi-check-circle-fill"></i>
-                  <span>Priority 24/7 Support</span>
+                  <span>Secure Checkout & SSL</span>
                 </li>
                 <li>
                   <i class="bi bi-check-circle-fill"></i>
-                  <span>Enterprise Security Features</span>
+                  <span>Customer Dashboard</span>
                 </li>
                 <li>
                   <i class="bi bi-check-circle-fill"></i>
-                  Maxime placeat facere possimus
+                  <span>Email Marketing Integration</span>
                 </li>
               </ul>
 
@@ -932,6 +953,60 @@
             </div>
           </div>
 
+        </div>
+
+        <!-- Additional Services Section -->
+        <div class="additional-services mt-5">
+          <div class="container section-title" data-aos="fade-up">
+            <h3>Additional Services</h3>
+            <p>Enhance your website with our premium add-on services</p>
+          </div>
+
+          <div class="row g-4">
+            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="service-item">
+                <div class="icon">
+                  <i class="bi bi-globe"></i>
+                </div>
+                <h4>Domain & Hosting</h4>
+                <div class="price-range">KES 3,000 - 30,000/year</div>
+                <p class="description">Premium domain registration and reliable hosting services for your website.</p>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+              <div class="service-item">
+                <div class="icon">
+                  <i class="bi bi-gear"></i>
+                </div>
+                <h4>Maintenance & Support</h4>
+                <div class="price-range">KES 5,000 - 20,000/month</div>
+                <p class="description">Regular updates, security monitoring, and technical support for your website.</p>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+              <div class="service-item">
+                <div class="icon">
+                  <i class="bi bi-graph-up"></i>
+                </div>
+                <h4>SEO & Marketing</h4>
+                <div class="price-range">KES 10,000 - 50,000/month</div>
+                <p class="description">Advanced SEO optimization and digital marketing strategies for better visibility.</p>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+              <div class="service-item">
+                <div class="icon">
+                  <i class="bi bi-palette"></i>
+                </div>
+                <h4>Custom Branding</h4>
+                <div class="price-range">KES 5,000 - 50,000</div>
+                <p class="description">Professional logo design, graphics, and brand identity development.</p>
+              </div>
+            </div>
+          </div>
         </div>
 
       </div>
@@ -1163,7 +1238,7 @@
     <div class="container copyright text-center mt-4">
       <p>© <span>Copyright</span> <strong class="px-1 sitename">Online Pulse</strong> <span>All Rights Reserved</span></p>
       <div class="credits">
-        Designed by <a href="https://bootstrapmade.com/">OnlinePulse</a>
+        Designed by <a href="#">OnlinePulse</a>
       </div>
     </div>
 
